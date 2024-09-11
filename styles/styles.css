@@ -39,6 +39,12 @@ section {
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
+  position: fixed;
+  z-index: 9999;
+  background: rgba(116, 46, 46, 0.606);
+  backdrop-filter: blur(20px);
+  width: 100%;
+  box-shadow: 0px 2px 0px 0px black 0.5;
 }
 
 .home_nav_bar .nav_menu {
