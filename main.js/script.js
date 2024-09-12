@@ -1,7 +1,7 @@
 const contactData = [];
 
 function validarCampos() {
-  //pega os inputs do form//
+  // Pega os inputs do formulário
   const getName = document.querySelector("#name").value;
   const getAddress = document.querySelector("#address").value;
   const getTelphone = document.querySelector("#telphone").value;
@@ -16,7 +16,7 @@ function validarCampos() {
 
   const id = contactData.length + 1;
 
-  personData = {
+  const personData = {
     id: id,
     name: getName,
     address: getAddress,
@@ -26,11 +26,13 @@ function validarCampos() {
   };
 
   contactData.push(personData);
-  console.log(contactData);
+
+  alert(
+    `Olá, ${personData.name}, seu cadastro foi concluído. Entraremos em contato pelo seu telefone ${personData.telphone}`
+  );
 }
 
-//insere os dados no array
-
+// Insere os dados no array
 const getSendButton = document.querySelector("#send");
 
 getSendButton.addEventListener("click", (e) => {
