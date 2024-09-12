@@ -6,7 +6,7 @@
     <title>NEOGYM</title>
     <!-- css -->
     <link rel="stylesheet" href="./styles/styles.css" />
-    
+
     <!-- font awsome -->
     <link
       rel="stylesheet"
@@ -21,7 +21,7 @@
           <h1>NEOGYM</h1>
         </div>
         <ul class="nav_menu" id="minha_lista">
-          <li><a href="#home" >Home</a></li>
+          <li><a href="#home">Home</a></li>
           <li><a href="#why_us">Why us</a></li>
           <li><a href="#hellthy">Healthy</a></li>
           <li><a href="#trainers">Trainers</a></li>
@@ -215,32 +215,38 @@
 
     <section class="contact-us" id="contact-us">
       <div class="form-conatact">
-        <form id="form" >
+        <form id="form">
           <div class="cadastro">
             <!--cadastro do cliente-->
             <h1>Cadastro de Cliente</h1>
             <input type="text" placeholder="Nome" required id="name" />
             <input type="text" placeholder="Endereço" required id="address" />
-            <input type="tel" placeholder="Telefone" required  id="telphone"/>
-            <input type="email" placeholder="Email" required  id="email"/>
-            <input type="date"  min="1980-01-01" max="2024-12-31" required  id="date"/>
+            <input type="tel" placeholder="Telefone" required id="telphone" />
+            <input type="email" placeholder="Email" required id="email" />
+            <input
+              type="date"
+              min="1980-01-01"
+              max="2024-12-31"
+              required
+              id="date"
+            />
           </div>
 
           <!-- Preferências de Contato -->
           <div class="preferencia_ctt">
             <h1>Como prefere ser contactado?</h1>
-           <label for="zap">
+            <label for="pref_whats">
               <span>
-                <input type="checkbox" name="pref_whats" id="pref_whats" >
+                <input type="checkbox" name="pref_whats" id="pref_whats" />
                 Whatsapp
               </span>
             </label>
             <label for="pref_email">
               <span>
-                <input type="checkbox" name="pref_email" id="pref_email" >
+                <input type="checkbox" name="pref_email" id="pref_email" />
                 Email
               </span>
-           </label>
+            </label>
           </div>
 
           <div class="regiao">
@@ -248,66 +254,88 @@
             <h1>Qual a sua região</h1>
             <label for="norte">
               <span>
-                <input name="regiao" type="radio" id="norte" value="norte" required>
+                <input
+                  name="regiao"
+                  type="radio"
+                  id="norte"
+                  value="norte"
+                  required
+                />
                 Norte
               </span>
             </label>
-              <label  for="nordeste">
-                <span>
-                  <input name="regiao" type="radio" id="nordeste" value="nordeste" required>
-                  Nordeste
-                </span>
-              </label>
-              <label for="sul">
-                <span>
-                  <input name="regiao" type="radio" id="sul" value="sul" required>
-                  Sul
-                </span>
-              </label>
-              
-              <label for="sudeste">
-                <span>
-                  <input name="regiao"  type="radio" id="sudeste" value="sul" required>
-                  Sudeste
-                </span>
-              </label>
-            
+            <label for="nordeste">
+              <span>
+                <input
+                  name="regiao"
+                  type="radio"
+                  id="nordeste"
+                  value="nordeste"
+                  required
+                />
+                Nordeste
+              </span>
+            </label>
+            <label for="sul">
+              <span>
+                <input
+                  name="regiao"
+                  type="radio"
+                  id="sul"
+                  value="sul"
+                  required
+                />
+                Sul
+              </span>
+            </label>
+
+            <label for="sudeste">
+              <span>
+                <input
+                  name="regiao"
+                  type="radio"
+                  id="sudeste"
+                  value="sul"
+                  required
+                />
+                Sudeste
+              </span>
+            </label>
           </div>
 
           <div class="estado">
             <!-- Estado -->
-          <label>Estado</label>
-          <select name="estado" required id="uf">
-            <option value="AC">Acre</option>
-            <option value="AL">Alagoas</option>
-            <option value="AM">Amazonas</option>
-            <option value="AP">Amapá</option>
-            <option value="BA">Bahia</option>
-            <option value="CE">Ceará</option>
-            <option value="DF">Distrito Federal</option>
-            <option value="ES">Espírito Santo</option>
-            <option value="GO">Goiás</option>
-            <option value="MA">Maranhão</option>
-            <option value="MT">Mato Grosso</option>
-            <option value="MS">Mato Grosso do Sul</option>
-            <option value="MG">Minas Gerais</option>
-            <option value="PA">Pará</option>
-            <option value="PB">Paraíba</option>
-            <option value="PR">Paraná</option>
-            <option value="PE">Pernambuco</option>
-            <option value="PI">Piauí</option>
-            <option value="RJ">Rio de Janeiro</option>
-            <option value="RN">Rio Grande do Norte</option>
-            <option value="RS">Rio Grande do Sul</option>
-            <option value="RO">Rondônia</option>
-            <option value="RR">Roraima</option>
-            <option value="SC">Santa Catarina</option>
-            <option value="SP">São Paulo</option>
-            <option value="SE">Sergipe</option>
-            <option value="TO">Tocantins</option>
-            
+            <label>Estado</label>
+            <select name="estado" required id="uf">
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AM">Amazonas</option>
+              <option value="AP">Amapá</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+            </select>
           </div>
-          </select>
 
           <!-- Senha -->
           <input type="password" placeholder="Senha" required id="password" />

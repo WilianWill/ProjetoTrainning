@@ -8,7 +8,11 @@ function validarCampos() {
   const getEmail = document.querySelector("#email").value;
   const getDate = document.querySelector("#date").value;
 
-  // pegar os check box e radio//
+  // Valida se todos os campos estão preenchidos
+  if (!getName || !getAddress || !getTelphone || !getEmail || !getDate) {
+    alert("Por favor, preencha todos os campos.");
+    return;
+  }
 
   const id = contactData.length + 1;
 
@@ -18,10 +22,11 @@ function validarCampos() {
     address: getAddress,
     telphone: getTelphone,
     email: getEmail,
-    birthdat: getDate,
+    birthdaT: getDate,
   };
 
   contactData.push(personData);
+  console.log(contactData);
 }
 
 //insere os dados no array
