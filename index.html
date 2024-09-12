@@ -6,7 +6,7 @@
     <title>NEOGYM</title>
     <!-- css -->
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="style.css" media="" />
+    
     <!-- font awsome -->
     <link
       rel="stylesheet"
@@ -21,7 +21,7 @@
           <h1>NEOGYM</h1>
         </div>
         <ul class="nav_menu" id="minha_lista">
-          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#home" >Home</a></li>
           <li><a href="#why_us">Why us</a></li>
           <li><a href="#hellthy">Healthy</a></li>
           <li><a href="#trainers">Trainers</a></li>
@@ -170,7 +170,7 @@
     <!-- trainer-galery end -->
 
     <!--product section-->
-    <div class="produts">
+    <div class="produts" id="products">
       <div class="tabela_prod">
         <h1>Nossos produtos</h1>
         <table>
@@ -215,59 +215,69 @@
 
     <section class="contact-us" id="contact-us">
       <div class="form-conatact">
-        <form action="#">
+        <form id="form" >
           <div class="cadastro">
             <!--cadastro do cliente-->
             <h1>Cadastro de Cliente</h1>
-            <input type="text" placeholder="Nome" required />
-            <input type="text" placeholder="Endereço" required />
-            <input type="tel" placeholder="Telefone" required />
-            <input type="email" placeholder="Email" required />
-            <input type="date" placeholder="Data de Nascimento" required />
+            <input type="text" placeholder="Nome" required id="name" />
+            <input type="text" placeholder="Endereço" required id="address" />
+            <input type="tel" placeholder="Telefone" required  id="telphone"/>
+            <input type="email" placeholder="Email" required  id="email"/>
+            <input type="date"  min="1980-01-01" max="2024-12-31" required  id="date"/>
           </div>
 
           <!-- Preferências de Contato -->
           <div class="preferencia_ctt">
             <h1>Como prefere ser contactado?</h1>
-           <label for="whatsapp">
-            <span>
-              <input type="checkbox" name="whats" id="zap" >
-              Whatsapp
-            </span>
-            <span>
-              <input type="checkbox" name="" id="pref_email" >
-              Email
-            </span>
+           <label for="zap">
+              <span>
+                <input type="checkbox" name="pref_whats" id="pref_whats" >
+                Whatsapp
+              </span>
+            </label>
+            <label for="pref_email">
+              <span>
+                <input type="checkbox" name="pref_email" id="pref_email" >
+                Email
+              </span>
            </label>
           </div>
 
           <div class="regiao">
             <!-- Região -->
             <h1>Qual a sua região</h1>
-            <label for="regiao">
+            <label for="norte">
               <span>
-                <input type="radio" id="norte" value="norte" required>
-                Norte
-              </span>
-              <span>
-                <input type="radio" id="nordeste" value="nordeste" required>
-                Nordeste
-              </span>
-              <span>
-                <input type="radio" id="sul" value="sul" required>
-                Sul
-              </span>
-              <span>
-                <input type="radio" id="sudeste" value="" required>
+                <input name="regiao" type="radio" id="norte" value="norte" required>
                 Norte
               </span>
             </label>
+              <label  for="nordeste">
+                <span>
+                  <input name="regiao" type="radio" id="nordeste" value="nordeste" required>
+                  Nordeste
+                </span>
+              </label>
+              <label for="sul">
+                <span>
+                  <input name="regiao" type="radio" id="sul" value="sul" required>
+                  Sul
+                </span>
+              </label>
+              
+              <label for="sudeste">
+                <span>
+                  <input name="regiao"  type="radio" id="sudeste" value="sul" required>
+                  Sudeste
+                </span>
+              </label>
+            
           </div>
 
           <div class="estado">
             <!-- Estado -->
           <label>Estado</label>
-          <select name="estado" required>
+          <select name="estado" required id="uf">
             <option value="AC">Acre</option>
             <option value="AL">Alagoas</option>
             <option value="AM">Amazonas</option>
@@ -300,7 +310,7 @@
           </select>
 
           <!-- Senha -->
-          <input type="password" placeholder="Senha" required />
+          <input type="password" placeholder="Senha" required id="password" />
 
           <!-- Botão de envio -->
           <button id="send" type="submit">Enviar</button>
